@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <% if (forecast == null) { %>
+    <div class="container">
+      <fieldset>
+        <form action="/" method="post">
+          <input name="latitude" type="text" class="ghost-input" placeholder="Latitude" required>
+          <input name="longitude" type="text" class="ghost-input" placeholder="Longitude" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
+        </form>
+      </fieldset>
+    </div>
+    <% } %>
+    <% if (forecast != null) { %>
+      <h1> What is the forecast for <%= forecast.name %>? </h1>
+      <img src=<%= forecast.icon %> >
+      <p> <%= forecast.detailedForecast %> </p>
+    <% } %>
+  </body>
+</html>
