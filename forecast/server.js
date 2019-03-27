@@ -1,9 +1,8 @@
 
 const express = require('express');
 const app = express();
-const port = 5000;
 const fetch = require("node-fetch");
-var forecastArray = { forecast : null }
+var forecastArray = { forecast : null , message : null}
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -16,8 +15,8 @@ app.get('/', function (req, res) {
   res.render('index', forecastArray)
 })
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(5000, function () {
+  console.log('Example app listening on port 5000!')
 })
 
 
@@ -32,22 +31,32 @@ app.post('/', function (req, res) {
       return response.json()
     }).then(function(json){
       if (json.properties == undefined) {
-        res.render('index', forecastArray)
+        res.render('index', {forecast : null, message: ""})
       } else {
         const forecastURL = json.properties.forecast
+        const zoneForecastURL = json.properties.forecastZone + '/forecast'
         console.log(forecastURL)
+        console.log(zoneForecastURL)
         fetch(forecastURL)
           .then(function(resp) {
             return resp.json()
           }).then (function (json2) {
             if (json2.properties == undefined) {
+              fetch(zoneForecastURL).then(function(res2) {
+                  return res2.json()
+                }).then(function(weather) {
+                  console.log(weather)
+                  if (weather.periods == undefined) {
+                    res.render('index', {forecast :"", message : null})
+		  } else {
+		    res.render('index', { forecast : weather.periods[0], message : ""})
+                  }
+                })
             } else {
-              const firstPeriod = 'It\'s ' + json2.properties.periods[0].temperature + 'º ' + json2.properties.periods[0].temperatureUnit + '\n' + json2.properties.periods[0].detailedForecast
-              console.log(firstPeriod)
-              res.render('index', {forecast: json2.properties.periods[0]})
-            }
-          })
-      }
-    })
+                res.render('index', {forecast: json2.properties.periods[0], message : null})
+              }
+            })
+        }
+      })
   }
 )

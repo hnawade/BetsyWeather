@@ -12,8 +12,9 @@ $
 
 # Command Line History (newest to oldest):
 :wq
-:q
 :Wq
+:s
+:q
 :w
 :q!
 :wq!
@@ -29,97 +30,121 @@ $
 # Registers:
 "0	CHAR	0
 	x
-"1	LINE	0
-	//require('./routes')(app);
+"1	CHAR	0
+	<!DOCTYPE html>
+	<html>
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Weather App</title>
+	    <link rel="stylesheet" type="text/css" href="/css/style.css">
+	    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	  </head>
+	  <body>
+	    <% if (forecast == null && e { %>
+	    <div class="container">
+	      <fieldset>
+	        <form action="/" method="post">
+	          <input name="latitude" type="text" class="ghost-input" placeholder="Latitude" required>
+	          <input name="longitude" type="text" class="ghost-input" placeholder="Longitude" required>
+	          <input type="submit" class="ghost-button" value="Get Weather">
+	        </form>
+	      </fieldset>
+	    </div>
+	    <% } %>
+	    <% if (forecast != null && forecast = "") { %>
+	      <h1> What is the forecast for <%= forecast.name %>? 
 "2	LINE	0
-	      <p><%= forecast %> </p>
+	                console.log(firstPeriod)
 "3	LINE	0
-	      <% } %>
+	                const firstPeriod = 'It\'s ' + json2.properties.periods[0].temperature + 'º ' + json2.properties.periods[0].temperatureUnit + '\n' + json2.properties.periods[0].detailedForecast
 "4	LINE	0
-	        <p><%= forecast %> </p>
+	                                  res.render('index', {forecast :""})
 "5	LINE	0
-	      <% if (forecast != null) { %>
+	const port = 5000;
 "6	LINE	0
-	        <% } %>
+	//require('./routes')(app);
 "7	LINE	0
-	               <p><%= forecast %> </p>
+	      <p><%= forecast %> </p>
 "8	LINE	0
-		<% console.log(forecast);if (forecast != null) { %>
+	      <% } %>
 "9	LINE	0
-	              console.log(json.properties.periods)
+	        <p><%= forecast %> </p>
 ""-	CHAR	0
-	$
+	f
 
 # File marks:
-'0  12  53  ~/README.md
-'1  11  53  ~/BetsyWeather/README.md
-'2  22  56  ~/forecast/views/index.ejs
-'3  23  34  ~/forecast/views/index.ejs
-'4  6  49  ~/forecast/views/index.ejs
-'5  12  0  ~/forecast/server.js
-'6  21  32  ~/forecast/views/index.ejs
-'7  47  72  ~/forecast/server.js
-'8  48  12  ~/forecast/server.js
-'9  25  10  ~/forecast/views/index.ejs
+'0  29  28  ~/forecast/views/index.ejs
+'1  34  56  ~/forecast/server.js
+'2  18  11  ~/forecast/server.js
+'3  28  159  ~/forecast/views/index.ejs
+'4  36  8  ~/forecast/server.js
+'5  10  30  ~/forecast/views/index.ejs
+'6  26  13  ~/forecast/views/index.ejs
+'7  56  89  ~/forecast/server.js
+'8  39  35  ~/forecast/server.js
+'9  48  37  ~/forecast/server.js
 
 # Jumplist (newest first):
--'  12  53  ~/README.md
+-'  29  28  ~/forecast/views/index.ejs
+-'  34  56  ~/forecast/server.js
+-'  18  0  ~/forecast/server.js
+-'  36  8  ~/forecast/server.js
+-'  28  6  ~/forecast/views/index.ejs
+-'  22  58  ~/forecast/views/index.ejs
+-'  10  11  ~/forecast/views/index.ejs
+-'  1  6  ~/forecast/views/index.ejs
+-'  26  6  ~/forecast/views/index.ejs
+-'  56  16  ~/forecast/server.js
+-'  39  8  ~/forecast/server.js
+-'  48  18  ~/forecast/server.js
+-'  47  16  ~/forecast/server.js
+-'  55  12  ~/forecast/server.js
+-'  52  28  ~/forecast/server.js
+-'  19  2  ~/forecast/server.js
+-'  4  0  ~/forecast/server.js
+-'  45  14  ~/forecast/server.js
+-'  31  4  ~/forecast/views/index.ejs
+-'  15  2  ~/forecast/server.js
+-'  11  0  ~/forecast/server.js
+-'  217  0  ~/forecast/node_modules/iconv-lite/lib/extend-node.js
+-'  1  0  ~/forecast/node_modules/iconv-lite/lib/extend-node.js
+-'  11  0  ~/README.md
+-'  14  0  ~/README.md
 -'  1  0  ~/README.md
 -'  11  53  ~/BetsyWeather/README.md
 -'  1  0  ~/BetsyWeather/README.md
--'  22  56  ~/forecast/views/index.ejs
 -'  23  6  ~/forecast/views/index.ejs
--'  1  0  ~/forecast/views/index.ejs
--'  6  4  ~/forecast/views/index.ejs
--'  12  0  ~/forecast/server.js
--'  47  14  ~/forecast/server.js
--'  21  4  ~/forecast/views/index.ejs
 -'  25  4  ~/forecast/views/index.ejs
--'  48  12  ~/forecast/server.js
--'  18  1  ~/forecast/views/index.ejs
--'  45  14  ~/forecast/server.js
--'  46  14  ~/forecast/server.js
--'  43  12  ~/forecast/server.js
--'  50  6  ~/forecast/server.js
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
--'  53  0  ~/forecast/server.js
--'  15  10  ~/forecast/views/index.ejs
--'  39  8  ~/forecast/server.js
--'  41  12  ~/forecast/server.js
--'  38  8  ~/forecast/server.js
--'  52  2  ~/forecast/server.js
--'  54  3  ~/forecast/server.js
+-'  57  12  ~/forecast/server.js
 -'  44  12  ~/forecast/server.js
--'  34  6  ~/forecast/server.js
--'  32  6  ~/forecast/server.js
--'  6  0  ~/forecast/server.js
--'  30  2  ~/forecast/server.js
--'  28  2  ~/forecast/server.js
--'  11  0  ~/forecast/server.js
--'  19  0  ~/forecast/server.js
--'  1  0  ~/forecast/server.js
+-'  59  6  ~/forecast/server.js
+-'  5  0  ~/forecast/public/css/style.css
+-'  28  2  ~/forecast/public/css/style.css
+-'  62  0  ~/forecast/server.js
+-'  40  8  ~/forecast/server.js
+-'  42  12  ~/forecast/server.js
+-'  38  8  ~/forecast/server.js
+-'  61  2  ~/forecast/server.js
+-'  63  3  ~/forecast/server.js
+-'  33  6  ~/forecast/server.js
+-'  31  6  ~/forecast/server.js
+-'  5  0  ~/forecast/server.js
 -'  29  2  ~/forecast/server.js
--'  1  0  ~/forecast/public/css
--'  26  12  ~/forecast/server.js
 -'  27  2  ~/forecast/server.js
--'  25  2  ~/forecast/server.js
--'  22  0  ~/forecast/server.js
--'  1  0  ~/forecast/node_modules
--'  27  0  ~/forecast/views/index.ejs
--'  69  0  ~/forecast/public/css/style.css
--'  1  0  ~/forecast/public/css/style.css
--'  21  2  ~/forecast/server.js
--'  20  0  ~/forecast/server.js
--'  26  6  ~/forecast/views/index.ejs
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
+-'  10  0  ~/forecast/server.js
+-'  1  0  ~/forecast/server.js
+-'  28  2  ~/forecast/server.js
 -'  1  0  ~/forecast/public/css
+-'  25  12  ~/forecast/server.js
+-'  26  2  ~/forecast/server.js
+-'  24  2  ~/forecast/server.js
+-'  21  0  ~/forecast/server.js
 -'  1  0  ~/forecast/node_modules
+-'  33  0  ~/forecast/views/index.ejs
 -'  69  0  ~/forecast/public/css/style.css
 -'  1  0  ~/forecast/public/css/style.css
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
+-'  20  2  ~/forecast/server.js
+-'  32  6  ~/forecast/views/index.ejs
 -'  5  0  ~/forecast/public/css/style.css
 -'  28  2  ~/forecast/public/css/style.css
 -'  1  0  ~/forecast/public/css
@@ -128,6 +153,14 @@ $
 -'  1  0  ~/forecast/public/css/style.css
 -'  5  0  ~/forecast/public/css/style.css
 -'  28  2  ~/forecast/public/css/style.css
+-'  5  0  ~/forecast/public/css/style.css
+-'  28  2  ~/forecast/public/css/style.css
+-'  1  0  ~/forecast/public/css
+-'  1  0  ~/forecast/node_modules
+-'  69  0  ~/forecast/public/css/style.css
+-'  1  0  ~/forecast/public/css/style.css
+-'  5  0  ~/forecast/public/css/style.css
+-'  28  2  ~/forecast/public/css/style.css
 -'  1  0  ~/forecast/public/css
 -'  1  0  ~/forecast/node_modules
 -'  69  0  ~/forecast/public/css/style.css
@@ -140,213 +173,225 @@ $
 -'  28  2  ~/forecast/public/css/style.css
 -'  5  0  ~/forecast/public/css/style.css
 -'  28  2  ~/forecast/public/css/style.css
--'  49  6  ~/forecast/server.js
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
--'  51  2  ~/forecast/server.js
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
--'  5  0  ~/forecast/public/css/style.css
--'  28  2  ~/forecast/public/css/style.css
--'  5  0  ~/forecast/public/css/style.css
--'  12  0  ~/forecast/server.js
--'  47  14  ~/forecast/server.js
--'  48  12  ~/forecast/server.js
--'  12  0  ~/forecast/server.js
--'  47  14  ~/forecast/server.js
--'  24  4  ~/forecast/views/index.ejs
--'  48  12  ~/forecast/server.js
--'  45  14  ~/forecast/server.js
--'  12  0  ~/forecast/server.js
+-'  34  56  ~/forecast/server.js
+-'  18  0  ~/forecast/server.js
+-'  34  56  ~/forecast/server.js
+-'  18  0  ~/forecast/server.js
+-'  36  8  ~/forecast/server.js
 
 # History of marks within files (newest to oldest):
 
+> ~/forecast/views/index.ejs
+	"	29	28
+	^	29	29
+	.	29	29
+	+	33	0
+	+	1	87
+	+	1	23
+	+	1	78
+	+	1	79
+	+	1	0
+	+	1	12
+	+	1	11
+	+	1	13
+	+	1	50
+	+	1	17
+	+	1	106
+	+	1	14
+	+	1	24
+	+	1	19
+	+	1	12
+	+	1	14
+	+	1	11
+	+	1	13
+	+	1	26
+	+	1	12
+	+	1	41
+	+	1	92
+	+	1	23
+	+	1	22
+	+	1	123
+	+	1	30
+	+	1	26
+	+	1	77
+	+	1	21
+	+	1	31
+	+	1	29
+	+	1	12
+	+	1	17
+	+	1	4
+	+	1	4
+	+	1	4
+	+	1	6
+	+	1	10
+	+	25	0
+	+	1	3
+	+	25	5
+	+	25	4
+	+	25	4
+	+	1	6
+	+	25	0
+	+	1	3
+	+	1	31
+	+	1	8
+	+	1	20
+	+	1	38
+	+	1	49
+	+	24	5
+	+	1	50
+	+	23	33
+	+	1	56
+	+	1	32
+	+	1	59
+	+	25	40
+	+	30	108
+	+	31	10
+	+	1	27
+	+	29	8
+	+	26	13
+	+	1	43
+	+	1	31
+	+	1	0
+	+	10	26
+	+	21	40
+	+	26	134
+	+	26	58
+	+	29	27
+	+	28	108
+	+	29	0
+	+	27	46
+	+	28	156
+	+	28	0
+	+	28	159
+	+	25	9
+	+	27	8
+	+	29	29
+
+> ~/forecast/server.js
+	"	34	56
+	^	34	57
+	.	34	56
+	+	29	10
+	+	31	33
+	+	4	36
+	+	33	22
+	+	31	28
+	+	61	3
+	+	32	26
+	+	61	6
+	+	61	2
+	+	62	0
+	+	61	3
+	+	33	6
+	+	36	6
+	+	34	42
+	+	35	13
+	+	36	52
+	+	42	33
+	+	41	32
+	+	59	7
+	+	33	38
+	+	61	5
+	+	57	13
+	+	43	35
+	+	58	11
+	+	60	4
+	+	61	2
+	+	62	0
+	+	56	80
+	+	44	11
+	+	44	28
+	+	40	7
+	+	38	31
+	+	56	44
+	+	56	68
+	+	41	36
+	+	42	36
+	+	41	28
+	+	43	33
+	+	44	28
+	+	44	20
+	+	56	45
+	+	56	69
+	+	42	22
+	+	40	24
+	+	42	0
+	+	63	0
+	+	56	14
+	+	56	13
+	+	56	39
+	+	56	172
+	+	56	59
+	+	44	0
+	+	56	13
+	+	56	171
+	+	56	0
+	+	56	14
+	+	56	13
+	+	56	37
+	+	56	151
+	+	56	45
+	+	56	40
+	+	56	72
+	+	10	34
+	+	34	41
+	+	45	48
+	+	4	0
+	+	18	11
+	+	19	45
+	+	37	73
+	+	37	73
+	+	45	62
+	+	46	39
+	+	45	54
+	+	46	36
+	+	50	5
+	+	52	60
+	+	54	17
+	+	18	11
+	+	47	43
+	+	48	37
+	+	38	32
+	+	39	35
+	+	5	53
+	+	56	15
+	+	56	15
+	+	56	15
+	+	57	12
+	+	58	10
+	+	59	7
+	+	60	5
+	+	50	66
+	+	34	42
+	+	52	71
+	+	56	74
+	+	56	0
+	+	56	89
+	+	50	68
+	+	34	53
+	+	18	11
+	+	34	56
+
+> ~/forecast/node_modules/iconv-lite/lib/extend-node.js
+	"	217	0
+
 > ~/README.md
-	"	12	53
-	^	12	54
-	.	12	53
+	"	11	0
+	^	11	144
+	.	11	143
 	+	7	37
 	+	5	12
 	+	7	202
 	+	8	0
 	+	7	185
-	+	12	53
+	+	14	53
+	+	11	143
 
 > ~/BetsyWeather/README.md
 	"	11	53
 	^	11	54
 	.	11	54
 	+	11	54
-
-> ~/forecast/views/index.ejs
-	"	22	56
-	^	22	57
-	.	22	56
-	+	27	0
-	+	15	87
-	+	15	23
-	+	14	78
-	+	15	79
-	+	18	0
-	+	18	12
-	+	18	11
-	+	18	13
-	+	18	50
-	+	18	17
-	+	18	106
-	+	18	14
-	+	18	24
-	+	18	19
-	+	18	12
-	+	18	14
-	+	18	11
-	+	18	13
-	+	18	26
-	+	18	12
-	+	18	41
-	+	18	92
-	+	18	23
-	+	18	22
-	+	18	123
-	+	14	30
-	+	15	26
-	+	18	77
-	+	5	21
-	+	18	31
-	+	18	29
-	+	18	12
-	+	18	17
-	+	19	4
-	+	19	4
-	+	19	4
-	+	19	6
-	+	19	10
-	+	25	0
-	+	21	3
-	+	25	5
-	+	25	4
-	+	25	4
-	+	21	6
-	+	25	0
-	+	11	3
-	+	10	31
-	+	20	8
-	+	10	20
-	+	22	38
-	+	6	49
-	+	24	5
-	+	22	50
-	+	23	33
-	+	22	56
-
-> ~/forecast/server.js
-	"	12	0
-	^	12	0
-	.	11	34
-	+	54	0
-	+	28	1
-	+	54	3
-	+	54	5
-	+	54	35
-	+	54	3
-	+	1	29
-	+	1	27
-	+	1	29
-	+	19	0
-	+	19	4
-	+	19	0
-	+	13	29
-	+	17	0
-	+	5	39
-	+	19	0
-	+	19	0
-	+	24	1
-	+	54	3
-	+	54	4
-	+	23	33
-	+	23	0
-	+	24	0
-	+	54	2
-	+	54	1
-	+	53	1
-	+	11	1
-	+	28	0
-	+	23	0
-	+	53	0
-	+	53	0
-	+	53	0
-	+	33	0
-	+	30	1
-	+	31	3
-	+	32	5
-	+	33	4
-	+	30	10
-	+	32	33
-	+	5	36
-	+	34	22
-	+	32	28
-	+	52	3
-	+	33	26
-	+	52	6
-	+	52	2
-	+	53	0
-	+	52	3
-	+	34	6
-	+	37	6
-	+	35	42
-	+	36	13
-	+	37	52
-	+	41	33
-	+	40	32
-	+	50	7
-	+	34	38
-	+	52	5
-	+	48	13
-	+	42	35
-	+	49	11
-	+	51	4
-	+	52	2
-	+	53	0
-	+	45	80
-	+	43	11
-	+	43	28
-	+	39	7
-	+	38	31
-	+	45	44
-	+	45	68
-	+	40	36
-	+	41	36
-	+	40	28
-	+	42	33
-	+	43	28
-	+	43	20
-	+	45	45
-	+	45	69
-	+	41	22
-	+	39	24
-	+	41	0
-	+	54	0
-	+	45	14
-	+	46	13
-	+	45	39
-	+	45	172
-	+	46	59
-	+	43	0
-	+	46	13
-	+	45	171
-	+	46	0
-	+	45	14
-	+	47	13
-	+	46	37
-	+	45	151
-	+	47	45
-	+	45	40
-	+	47	72
-	+	11	34
 
 > ~/forecast/public/css/style.css
 	"	5	0

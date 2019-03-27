@@ -349,3 +349,171 @@ git --version
 apt
 sudo su
 logout
+cd forecast/
+cd
+ls -altr
+git init
+rm .git
+rmdir .git
+rm .git/*
+git clone https://github.com/hnawade/BetsyWeather.git
+ls -altr
+cd BetsyWeather/
+ls -altr
+vi README.md 
+cd
+cp -r forecast BetsyWeather
+rm forecast/nohup.out 
+cp -r forecast BetsyWeather
+cd BetsyWeather/
+ls -altr
+git push
+git commit
+git push README.md
+git pull
+git config
+git commit 
+git add forecast/
+git commit
+git push README.md
+git pull README.md
+cd
+init git https://github.com/hnawade/BetsyWeather.git
+git clone https://github.com/hnawade/BetsyWeather.git
+git help
+git commit
+cd BetsyWeather/
+git commit
+git add README.md 
+git push README.md
+cd
+rm -r BetsyWeather/
+sudo rm -r BetsyWeather/
+vi README.md
+git init
+git add .
+git commit -m "First commit"
+git remote add origin https://github.com/hnawade/BetsyWeather.git
+git remote -v
+$ git push -u origin master
+git push -u origin master
+git pull
+git push -u origin master
+git add .
+git commit -m "Second commit"
+$ git push -u origin master
+git push -u origin master
+git pull
+git pull .
+git push -u origin master
+ls -altr
+git merge
+git checkout
+git status
+git push -u origin master
+git remote
+git push -f origin master
+vi README.md 
+git add README.md 
+git commit -m "Readme file update"
+git commit -m 'Readme file update'
+git status
+git commit
+git push
+git pull
+vi README.md 
+locate node.js
+cd forecast/node_modules/iconv-lite/lib/extend-node.js
+vi forecast/node_modules/iconv-lite/lib/extend-node.js 
+vi forecast/views/index.ejs 
+bg
+node forecast/server.js 
+bg
+cd forecast/
+vi server.js 
+node server.js 
+vi server.js 
+killall
+kill $!
+node server.js
+bg
+disarm
+detach
+disown
+bg
+killall
+kill
+kill $!
+vi server.js 
+node server.js
+vi views/index.ejs 
+node server.js 
+bg
+disown
+bg
+jobs
+logout
+nohup node forecast/server.js
+nohup node forecast/server.js &
+disown
+jobs
+logout
+ps -ef | grep nohup
+cd forecast/
+vi server.js 
+node server.js 
+vi views/index.ejs 
+vi server.js 
+node server.js 
+bg
+disown
+disown $!
+ps -ef | grep nohup
+ps -ef | grep node
+kill -9 13410
+ps -ef | grep node
+cd forecast/
+node server.js 
+bg
+ps -ef | grep node
+disown 15502
+ps -ef | grep node
+bg
+disown
+logout
+exit
+screen
+logout
+node server.js 
+jobs
+bg
+disown
+exit
+screen -r
+node server.js 
+node forecast/server.js 
+cd forecast/
+node server.js 
+screen
+screen -r
+screen
+man screen
+which screen
+man screen
+node server.js 
+bg
+disown
+ps -ef |grep node
+tmux
+sudo yum install tmux
+node server.js 
+kill $!
+tmux
+logout
+man tmux
+tmus attach 0
+tmux attach
+tmux attach 0
+tmux attach-session 0
+tmux attach
+logout

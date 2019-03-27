@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <% if (forecast == null) { %>
+    <% if (message == null) { %>
     <div class="container">
       <fieldset>
         <form action="/" method="post">
@@ -18,10 +18,16 @@
       </fieldset>
     </div>
     <% } %>
-    <% if (forecast != null) { %>
+    <% if (forecast != null && forecast != "") { %>
       <h1> What is the forecast for <%= forecast.name %>? </h1>
       <img src=<%= forecast.icon %> >
       <p> <%= forecast.detailedForecast %> </p>
+    <% } if (message != null) { %>
+      <p> api.weather.gov was not able to provide the most up-to-date data for the exact point, so more general data for the zone has been shown</p>
+    <% } if (forecast == "" && message == null) { %>
+      <p> Please enter a different pair of coordinates. It apears as though the coordinates you entered were either on sea or a place we don't have weather data</p>
+    <% } if (forecast == null && message != null) { %>
+      <p> The coordinates you entered were invalid, please try entering a different pair of coordinates </p>
     <% } %>
   </body>
 </html>
